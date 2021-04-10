@@ -19,24 +19,25 @@ body {
 
 header {
     padding: 15px;
-    
+    background-color: rgb(216, 198, 233);
 }
+
 
 h1 {
-    color: aquamarine
+    color: rgb(75, 194, 155)
 }
 
-
 button {
-    background-color: #1a03e5;
+    background-color: #29e3d6;
     border-radius: 25px;
-    color: rgb(182, 173, 245);
-    font-size: 23px;
+    color: rgb(112, 22, 196);
+    font-size: 25px;
     text-align: center;
+    font-weight: bold;
     letter-spacing: 0.20px;
     line-height: 17px;
     max-width: 250px;
-    padding: 25px 50px;
+    padding: 25px 40px;
     margin-top: 10px;
     cursor: help;
     float: center;
@@ -45,9 +46,9 @@ button {
 }
 
 .page-title {
-    /* width: 90%; */
+    /* width: 90%; not active */
     text-align: center;
-    /* margin: 3.5%; */
+    /* margin: 3.5%; not active */
     line-height: 2.2;
     font-size: 40px;
 }
@@ -59,10 +60,6 @@ button {
     font-weight: bold;
 }
 
-.button-style {
-    padding: 270px 0px;
-}
-
 .background-content {
     /* height: 600px;
     width: 100%;
@@ -70,4 +67,8 @@ button {
     background-image: url("../images/sea.png");
     background-size: cover;
     background-position: center;
+}
+
+.button-style {
+    padding: 270px 0px;
 }
