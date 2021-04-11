@@ -72,3 +72,24 @@ button {
 .button-style {
     padding: 270px 0px;
 }
+
+#quiz {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#question {
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#finish {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}

@@ -11,17 +11,37 @@
     
     <header>
         <h1 class="page-title">Code Quiz Challenge!</h1>
-        <div class="sub-title">
+        <div id="timer">
+            Time:
+        </div>
+        <div class="sub-title" id="start-quiz">
             <p>Click below to start quiz!</p>
         </div>
+        <div><a href="scores.html">View High Scores</a></div>
     </header>
 
     <main class="background-content">
-        <div class="button-style">
+        <div class="button-style" id="start-div">
             <button id="start-button">Start Quiz!</button>
         </div>
+        <div id="quiz">
+            <div id="question">
+            </div>
+            <div id="choices">
+                <button id="A"></button><br>
+                <button id="B"></button><br>
+                <button id="C"></button><br>
+                <button id="D"></button><br>
+            </div>
+            <p id="feedback"></p>
+        </div>
+        <div id="finish">
+            <p>You have finished the quiz!</p>
+            <p id="result"></p>
+            <p>Your initials here:<input type="text"max="3" id="playerInitials"/><button id="btn-score">Submit score</button></p>
+        </div>
     </main>
-
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
