@@ -17,29 +17,29 @@
 var questions = [
     {
         name: "When is it appropriate to use a semicolon?",
-        choices: ["A. this is dummy text", "B. this is more dummy text", "C. dummy text", "D. When there is a complete statement"],
+        choices: ["A. In the middle of a statement", "B. At the end of a statement", "C. You never use one!", "D. When there is a complete statement"],
         answer: 3
     },
     {
         name: "What is the purpose of variables?",
-        choices: ["A. To store a value", "B. this is more dummy text", "C. dummy text", "D. dummy text"],
+        choices: ["A. To store a value", "B. To start a line of code", "C. To make a random list", "D. To check if someting is true of false "],
         answer: 0
     },
     {
         name: "How many data types are there?",
-        choices: ["A. another dummy text", "B. this is more dummy text", "C. 9 types", "D. dummy text"],
+        choices: ["A. There are none!", "B. There are 21 types", "C. There are 9 types", "D. There are endless types"],
         answer: 2
     },
     {
-        name: "When is it appropriate to add an if statement?",
-        choices: ["A. yes dummy text", "B. When something satisfies the condition, run the code", "C. no dummy text", "D. dummy text"],
+        name: "What does an if statement do?",
+        choices: ["A. It creates a loop", "B. If the condition is true, then it runs the code block", "C. There's no such thing", "D. It sets a timer"],
         answer: 1
     },
 ];
 
 var score = 0;
 var questionCounter = 0;
-var timer = 60;
+var timer = 30;
 var interval;
 
 document.getElementById("quiz").style.display="none";
@@ -49,7 +49,7 @@ document.getElementById("finish").style.display="none";
 document.getElementById("start-button").onclick = function () {
     score = 0;
     questionCounter = 0;
-    timer = 60;
+    timer = 30;
     document.getElementById("start-div").style.display="none";
     document.getElementById("start-quiz").style.display="none";
     document.getElementById("finish").style.display="none";
@@ -117,6 +117,8 @@ function saveScore() {
     previousScoreList.push(playerScore)
     console.log(previousScoreList);
     localStorage.setItem("AllScores", JSON.stringify(previousScoreList));
+    alert("Submitted!");
+    document.getElementById("btn-score").style.display="none";
 }
 
 document.getElementById("A").addEventListener("click", checkAnswer);
