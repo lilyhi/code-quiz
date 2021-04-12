@@ -1,19 +1,3 @@
-// variables 
-
-
-// questions/answers: 
-
-// 1. When is it appropriate to use a semicolon? 
-// Answers: A. B. C. D. 
-// 2. What is the purpose of variables? 
-// Answers: A. B. C. D. (To store a value)
-// 3. How many data types are there? 
-// Answers: A. B. C. D. (9 types)
-// 4. When is it appropriate to add an if statement? 
-// Answers: A. B. C. D. (When something satisfies the condition, run the code)
-// 5. When do loops stop running? 
-// Answers: A. B. C. D. (Once the condition returns false)
-
 var questions = [
     {
         name: "When is it appropriate to use a semicolon?",
@@ -22,7 +6,7 @@ var questions = [
     },
     {
         name: "What are the purpose of variables?",
-        choices: ["A. To store a value", "B. To start a line of code", "C. To make a random list", "D. To check if someting is true of false "],
+        choices: ["A. To store a value", "B. To start a line of code", "C. To make a random list", "D. To check if someting is true or false "],
         answer: 0
     },
     {
@@ -34,6 +18,11 @@ var questions = [
         name: "What does an if statement do?",
         choices: ["A. It creates a loop", "B. If the condition is true, then it runs the code block", "C. There's no such thing", "D. It sets a timer"],
         answer: 1
+    },
+    {
+        name: "When do loops stop running?",
+        choices: ["A. Whenever you type stop!", "B. When the condition returns true", "C. Once the condition returns false", "D. When you type a new line of code"],
+        answer: 2
     },
 ];
 
@@ -126,21 +115,3 @@ document.getElementById("B").addEventListener("click", checkAnswer);
 document.getElementById("C").addEventListener("click", checkAnswer);
 document.getElementById("D").addEventListener("click", checkAnswer);
 document.getElementById("btn-score").addEventListener("click", saveScore);
-
-
-
-// functions:
-
-// start/click button 
-
-// timer function (starts)
-
-// questions/answers 
-
-// answer incorrectly = time is subtracted from the clock
-
-// game over function = all questions answered or times reaches 0 
-
-// save score function (enter name or initials)
-
-// view high score  

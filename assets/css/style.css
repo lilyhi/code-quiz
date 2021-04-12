@@ -1,9 +1,3 @@
-/* :root {
-    --primary-color: ;
-    --secondary-color: ;
-    --tertiary-color: ;
-} */
-
   * {
     box-sizing: border-box;
     padding: 0;
@@ -12,8 +6,11 @@
 
 
 body {
-    /* color: var(--primary-color); */
     font-family: Helvetica, Arial, sans-serif;
+    background-image: url("../images/sea.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -33,7 +30,6 @@ button {
     color: rgb(112, 22, 196);
     font-size: 25px;
     text-align: center;
-    /* font-weight: bold; */
     letter-spacing: 0.20px;
     line-height: 20px;
     max-width: 250px;
@@ -46,9 +42,7 @@ button {
 }
 
 .page-title {
-    /* width: 90%; not active */
     text-align: center;
-    /* margin: 3.5%; not active */
     line-height: 2.2;
     font-size: 40px;
 }
@@ -61,17 +55,7 @@ button {
 }
 
 .scoreList {
-    /* color:blueviolet; */
     color:rgb(75, 194, 155);
-}
-
-.background-content {
-    /* height: 600px;
-    width: 100%;
-    margin-bottom: 25px; */
-    background-image: url("../images/sea.png");
-    background-size: cover;
-    background-position: center;
 }
 
 .button-style {
@@ -81,7 +65,7 @@ button {
 #quiz {
     text-align: center;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 #question {
