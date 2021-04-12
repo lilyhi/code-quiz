@@ -21,7 +21,7 @@ var questions = [
         answer: 3
     },
     {
-        name: "What is the purpose of variables?",
+        name: "What are the purpose of variables?",
         choices: ["A. To store a value", "B. To start a line of code", "C. To make a random list", "D. To check if someting is true of false "],
         answer: 0
     },
